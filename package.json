@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "concurrently \"cd BackEnd && npm run dev\" \"cd FrontEnd && npm run dev\"",
     "build": "tsc",
-    "start": "node BackEnd/dist/index.js"
+    "start": "npm run dev"
   },
   "keywords": [],
   "author": "Abdullah A.A",
