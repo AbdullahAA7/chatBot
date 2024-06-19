@@ -9,7 +9,12 @@ dotenv.config();
 const app = express();
 const cookieSecret = import.meta.env.COOKIE_SECRET;
 //middlewares
-app.use(cors({ origin: `http://localhost:5173`, credentials: true }));
+app.use(
+  cors({
+    origin: `http://localhost:${import.meta.env.PORT}`,
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(cookieParser(cookieSecret));
 app.use("/star", starRouter); // Domain/star => starRouter.js
