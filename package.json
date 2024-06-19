@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "dev": "concurrently \"cd ./BackEnd && npm run dev\" \"cd ./FrontEnd && npm run dev\"",
     "build": "tsc",
     "start": "node BackEnd/dist/index.js"
   },
